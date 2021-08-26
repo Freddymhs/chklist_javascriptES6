@@ -184,7 +184,7 @@ console.log('false');
 }
 
 
-// cadenas para renderizar componentes :O
+//todo cadenas para renderizar componentes :O
 function whatRender(configure){
     let DEFAULT_CONFG = {name:"deffffffffff", show :'showwwww1' , size: 'sizeeeee1'};
     // 
