@@ -144,14 +144,59 @@ console.log(algo);
 
 // **default parameters**
 // podemos asignar default params para instanciar objectos y propiedades
-let createUser = function(obj={}){
-const {name="freddy"} = obj;
+let createUser = function(dato){
+
+const {name = "sda"} = dato && {} && true || {};
 return name;
 }
-let createDog = function(){
-   return name; 
+console.log(!!undefined);
+console.log(!!{});
+console.log(!!true);
+
+// const { hola} = undefined; // no se peude destructurar un undefined;
+
+console.log(createUser({}));
+console.log(createUser([])); 
+console.log(createUser()); 
+console.log(createUser(null));
+console.log(createUser(false));
+console.log(createUser(true));
+console.log(createUser('sda'));   
+console.log(createUser(undefined));   
+ // sin objetos
+
+ console.log(typeof({}))
+ console.log(typeof([]))
+ console.log(typeof(null))
+ console.log(typeof(undefined))
+
+
+// console.log(createUser());
+
+// console.log(createDog(null));
+
+
+
+if(-1){
+console.log('true')
+}else{
+console.log('false');
 }
 
-console.log(createUser());
 
-console.log(createDog());
+// cadenas para renderizar componentes :O
+function whatRender(configure){
+    let DEFAULT_CONFG = {name:"deffffffffff", show :'showwwww1' , size: 'sizeeeee1'};
+    // 
+    // 
+    let opt = configure || DEFAULT_CONFG;
+    let altOPT =  configure && DEFAULT_CONFG;
+    let size = opt.show && opt.size;
+
+    console.log(size);
+}
+const opt = {name:"las opciones",show :'showwwww2' , size: 'sizeeeee2'};
+
+whatRender(opt);
+
+console.log(!!'sda')

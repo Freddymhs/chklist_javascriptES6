@@ -2,5 +2,6 @@
   "cSpell.language": "es",
   "cSpell.enableFiletypes": [
     "javascript"
-  ]
+  ],
+  "discord.enabled": true
 }
