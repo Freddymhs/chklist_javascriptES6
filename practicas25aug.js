@@ -1,5 +1,6 @@
 console.log('init!');
 
+
 // primitivos
 let zero = 0;
 let nulo = null;
@@ -200,3 +201,10 @@ const opt = {name:"las opciones",show :'showwwww2' , size: 'sizeeeee2'};
 whatRender(opt);
 
 console.log(!!'sda')
+console.log(true && "default"); //////////////////memorizarlo
+console.log(false && "defaulttt");
+
+
+console.log(true || "default");
+console.log(false || "defaulttt");  //////////////////memorizarlo
+
