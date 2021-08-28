@@ -100,7 +100,6 @@ console.log('================================================================');
 // un ambito congelado en el tiempo
 // el closure es la funcion que se vincula al scope superior 
 // el Clousure es una caracteristica del javascript, y debo conocerlo porque existe en muchos lados
-
 // stack con pop push show ! HACERLO
 // funciones anidadas e imprimir el ultimo con su valor de su propio scpope
 const micontador =(function(){
@@ -128,13 +127,10 @@ micontador();
 // !async await
 
 
-// 2da unidad penultimo video
-
-// set arrays de valores unicos
 
 
-const isBelowThreshold = (currentValue) => currentValue < 40;
+// const isBelowThreshold = (currentValue) => currentValue < 40;
 
-const array1 = [1, 30, 39, 29, 10, 13];
+// const array1 = [1, 30, 39, 29, 10, 13];
 
-console.log(array1.every(isBelowThreshold));
+// console.log(array1.every(isBelowThreshold));
