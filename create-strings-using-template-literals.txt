@@ -1,0 +1,16 @@
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"]
+};
+
+function makeList(arr) { // funcion que itera
+  
+  const failureItems = [ //creando array
+    ...arr.map(e => `<li class="text-warning">${e}</li>`) // magia!
+]; // array creado !
+
+  return failureItems;
+}
+
+const failuresList = makeList(result.failure);

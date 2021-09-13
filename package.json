@@ -4,7 +4,7 @@
   "description": "",
   "main": "basics.js",
   "scripts": {
-    "watch": "nodemon practicas25aug.js --port=3000"
+    "watch": "nodemon *.js --port=3000"
   },
   "keywords": [],
   "author": "",
