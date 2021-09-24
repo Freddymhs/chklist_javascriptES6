@@ -1,0 +1,269 @@
+div {
+  border: 1px solid black;
+}
+
+/* estilos para mi contenido y organizacion de espacios */
+
+div.contenido {
+  background-color: coral;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: calc(100%);
+}
+
+/* ancho de cada elemento */
+
+div.tema {
+  width: calc(100%);
+}
+
+/* practica posicionamento */
+
+.pos_padre {
+  background-color: chocolate;
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  min-height: 400px;
+  min-width: 400px;
+}
+
+.pos_hijo {
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+
+.pos_hijo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* sticky */
+
+.pos_hijo:nth-child(1) {
+  position: sticky;
+  top: 0px;
+}
+
+/* static */
+
+.pos_hijo:nth-child(2) {
+  position: static;
+}
+
+/* relative */
+
+.pos_hijo:nth-child(3) {
+  position: relative;
+  right: 10px;
+  top: 30px;
+}
+
+/* absolute */
+
+.pos_hijo:nth-child(4) {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+
+.pos_hijo:nth-child(5) {
+  position: fixed;
+  right: 10px;
+  top: 30px;
+}
+
+.pos_hijo:nth-child(6) {
+  z-index: 2;
+}
+
+/* background */
+
+.fondo {
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+}
+
+.fondo h2 {
+  color: white;
+}
+
+/* queries to mid and large sizes */
+
+/*  , and boxmodel  , textsize */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%
+}
+
+/* normalize */
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%
+}
+
+body {
+  margin: 0
+}
+
+main {
+  display: block
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+a {
+  background-color: transparent
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted
+}
+
+b, strong {
+  font-weight: bolder
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+small {
+  font-size: 80%
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline
+}
+
+sub {
+  bottom: -.25em
+}
+
+sup {
+  top: -.5em
+}
+
+img {
+  border-style: none
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0
+}
+
+button, input {
+  overflow: visible
+}
+
+button, select {
+  text-transform: none
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+  outline: 1px dotted ButtonText
+}
+
+fieldset {
+  padding: .35em .75em .625em
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal
+}
+
+progress {
+  vertical-align: baseline
+}
+
+textarea {
+  overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+details {
+  display: block
+}
+
+summary {
+  display: list-item
+}
+
+template {
+  display: none
+}
+
+[hidden] {
+  display: none
+}

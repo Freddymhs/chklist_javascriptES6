@@ -5,13 +5,88 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ESTUDIO</title>
+  <link rel="stylesheet" type="text/css" href="./estilo.css">
 </head>
 
 <body>
-  este archivo es solo para practicar javascript
+  <header></header>
+  <nav></nav>
+  <main>
+    <h1>temas imporantes a comprender</h1>
+    <a src="https://codepen.io/collection/ZMYvVY">CODEPEN</a>
+    <div class="contenido">
 
-  <script src="./lecutraPablo6Sep.js"></script>
+      <div class="tema">
+        <h2>arrow function</h2>
+        <ul>
+          <li>una funcion que deleg el this a un scope superior</li>
+          <li>una funcion que tiene de forma implicita el return</li>
+          <li>mas corto que function clasica</li>
+        </ul>
+      </div>
+
+      <div class="tema">
+        <h2> destructuring</h2>
+        <ul>
+          <li>permite desempaquetar valores de tipo objecto o arreglo</li>
+          <li>mezclado con default params permite mucha flexibilidad</li>
+        </ul>
+      </div>
+      <div class="tema">
+        <h2>default parameter && default destructuring</h2>
+        <ul>
+          <li>podemos asignar parametros por defecto en props para una funcion que los requiera</li>
+          <li>desestructurando podemos crear un objecto en caso que no exista o ponerle un alias</li>
+        </ul>
+      </div>
+      <div class="tema">
+        <h2>rest/spread</h2>
+        <ul>
+          <li>spread permite dispersar propiedades ya que obj u array </li>
+          <li>rest es unir un grupo de propiedades en un array u objecto</li>
+
+        </ul>
+      </div>
+      <div class="tema">
+        <h2>consice literals</h2>
+        <ul>
+          <li>esto es asignar propiedades a objectos sin tener que duplicar su key y su valor</li>
+        </ul>
+      </div>
+      <div class="tema">
+        <h2>closures </h2>
+        <ul>
+          <li>es una función que guarda referencias de su ambito lexico</b></li>
+          <li>podriamos asignar este closure a una varaible o muchas</li>
+          <li>permite no contamiar el scope con otras variables</li>
+          <li>permite proteger datos internos y asi no puedan ser accededidos desde fuera</li>
+        </ul>
+      </div>
+      <div class="tema">
+        <h2>promises </h2>
+        <ul>
+          <li>una forma de trabajar con codigo de forma Asincrono</li>
+          <li>existen muchas formas de tratarlos con promises all o race u otros de forma continua asegurando un orden</li>
+          <li>se puede usar trycatch o .catch para manejar los errores de codigo en peticiones asincronas</li>
+          <li>historicamente comenzo como "callbackhell" paso a -> ".then .catch" y luego a "Promises" </li>
+          <li>la siguiente "evolucion" es azuar sintactica</li>
+        </ul>
+      </div>
+      <div class="tema">
+        <h2>Async / await </h2>
+        <ul>
+          <li>esta es una evolucion para manejar promesas de forma ultra comoda </li>
+          <li>este necesita de try catch envolviendolo para funcionar correctamente</li>
+        </ul>
+      </div>
+
+
+    </div>
+  </main>
+  <footer>
+    contenido default para testing
+  </footer>
 </body>
 
 </html>
